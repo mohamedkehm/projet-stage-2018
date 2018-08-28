@@ -1,0 +1,41 @@
+
+
+
+<div class="container">
+        <h2>Admins Details</h2>
+         <table class="table">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Birth date</th>
+              <th>Email</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr *ngFor="let  admin of admins">
+                        <td>
+                            {{admin.id}}
+                        </td>
+                        <td>
+                            {{admin.firstName}}
+                        </td>
+                        <td>
+                            {{admin.lastName}}
+                        </td>
+                        <td>
+                                {{admin.birthdate}}
+                            </td>
+                            <td>
+                                    {{admin.email}}
+                                </td>
+                        <td>
+                            <button>Edit</button> <button>Details</button> <button>Delete</button>
+                        </td>
+                      </tr>
+          </tbody>
+        </table>
+      </div>
+      

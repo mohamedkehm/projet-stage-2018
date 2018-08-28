@@ -1,0 +1,17 @@
+
+
+#gauche{
+	width:auto;
+    float:left;    height: 100%;
+    margin-right: 0;
+    padding: 0;
+    
+   
+}
+
+#droite{width:auto;
+float: left;
+   margin-left: 0; }
+#navleft{
+float: left;
+}

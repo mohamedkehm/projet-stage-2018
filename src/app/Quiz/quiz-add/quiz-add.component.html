@@ -1,0 +1,57 @@
+<div *ngIf="visible">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Quiz Name</label>
+    <input [(ngModel)]="this.quizname" type="text" class="form-control"  placeholder="Enter a Name for the Quiz">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Description</label>
+    <input type="text" class="form-control"  placeholder="Enter a Description">
+  </div>
+
+   <div class="form-group">
+        <label for="formGroupExampleInput2">Number of question</label>
+        <input type="text" class="form-control" placeholder="Enter a valid Number">
+    </div>
+      <button (click)="next()" type="submit" class="btn btn-primary">Next</button>
+  </div>
+
+<div *ngIf="!visible">
+  <div class="container">
+    <h2>Creating the Quiz {{quizname}}</h2>
+     <table class="table">
+      <thead>
+     
+         create a Question   
+       
+      </thead>
+      <tbody>
+            <tr >
+                <td> <h5>Question:</h5></td>
+                <td><input type="text" class="form-control"  placeholder="Enter a question"></td>
+             </tr>
+             <tr >
+              <td> <h5> Right Answer</h5></td>
+              <td><input type="text" class="form-control"  placeholder="Enter the right answer"></td>
+           </tr>
+           <tr >
+            <td> <h5> Wrong Answer1</h5></td>
+            <td><input type="text" class="form-control"  placeholder="Enter a wrong answer"></td>
+         </tr>
+         <tr >
+          <td> <h5> Wrong Answer2</h5></td>
+          <td><input type="text" class="form-control"  placeholder="Enter a wrong answer"></td>
+       </tr>
+       <tr >
+          <tr >
+              <td> <h5> Score given for the right answer</h5></td>
+              <td><input type="text" class="form-control"  placeholder="Enter a valid score"></td>
+           </tr>
+           <tr >
+        <td></td>
+        <td><button (click)="next()" type="submit" class="btn btn-primary">Create</button></td>
+     </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

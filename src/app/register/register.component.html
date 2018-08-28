@@ -1,0 +1,49 @@
+
+<div id="sty">
+
+
+  <div class="form-group" id="cont">
+      <label>First Name:
+        <input [(ngModel)]="admin.firstName" minlength="5"  class="form-control" placeholder="firstName" #name="ngModel" >
+      </label>
+    </div>
+    <div class="form-group" id="cont">
+      <label>Last Name:
+        <input [(ngModel)]="admin.lastName" class="form-control" placeholder="lastName">
+      </label>
+    </div>
+    <div class="form-group" id="cont">
+      <label>Birthdate:
+        <input [(ngModel)]="admin.birthdate" class="form-control" placeholder="birthdate">
+      </label>
+    </div>
+    <div class="form-group" id="cont">
+    <label>Email:
+      <input [(ngModel)]="admin.email" class="form-control" placeholder="email">
+    </label>
+  </div>
+  <div class="form-group" id="cont">
+  <label>Username:
+    <input [(ngModel)]="admin.username" class="form-control" placeholder="username">
+  </label>
+</div>
+    <div class="form-group" id="cont">
+        <label>Password:
+          <input [(ngModel)]="admin.password"class="form-control" placeholder="password" type="password"> 
+        </label>
+      </div>
+      <div class="form-group" id="cont"> 
+        <label>Confirm your password:
+          <input [(ngModel)]="cpassword" class="form-control" placeholder="Confirm your password" type="password"> 
+        </label>
+        <div class="alert alert-warning" role="alert" *ngIf="visible"><p>Confirmation is wrong!!!</p></div >
+      </div>
+      
+      <div class="form-group" id="cont"> 
+          <button  (click)="onClick()" type="submit" class="btn btn-primary">Register</button >
+        </div>
+      
+    
+      <br>
+    </div>   
+       

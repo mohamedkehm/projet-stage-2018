@@ -1,0 +1,21 @@
+<p>
+  article works!
+  {{admin.firstName}}
+
+</p>
+<h2>{{art.name}} Details</h2>
+<div><span>id: </span>{{art.id}}</div>
+<div><span>name: </span>{{art.name}}</div>
+<div><span>prix: </span>{{art.prix}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="nom" placeholder="name">
+  </label>
+</div>
+<div>
+    <label>prix:
+      <input [(ngModel)]="art.prix" placeholder="prix">
+    </label>
+  </div>
+  <button (click)="onClickMe()">Click me!</button>
+ 
